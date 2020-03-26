@@ -1,0 +1,10 @@
+This package is a place holder.
+
+Get the SDK and extract the files in the root folder.
+Uncomment all lines 'debian/install' and 'debian/patches/series' (if exists).
+
+Then run:
+$ debuild -rfakeroot
+
+And you'll get a proper deb file with SDK, ready to install.
+

@@ -1,0 +1,18 @@
+Source: vstsdk2.4
+Section: devel
+Priority: optional
+Maintainer: falkTX <falktx@gmail.com>
+Standards-Version: 3.8.4
+Build-Depends: debhelper (>= 7), quilt (>= 0.46-7~)
+
+Package: vstsdk2.4
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: vstsdk2.3
+Description: Steinberg VST SDK 2.4
+ This package provides the header files of the Steinberg VST PlugIns SDK,
+ needed to compile hosts and plugins with proper VST support.
+ .
+ Please note:
+ If you're installing this from the PPA, the package will be empty.
+ You should download the SDK and rebuild this package for yourself.

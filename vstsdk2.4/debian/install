@@ -1,0 +1,6 @@
+#public.sdk         usr/include/
+#pluginterfaces     usr/include/
+
+#public.sdk/source/vst2.x/*.cpp  usr/include/
+#public.sdk/source/vst2.x/*.h    usr/include/
+#pluginterfaces/vst2.x/*.h       usr/include/

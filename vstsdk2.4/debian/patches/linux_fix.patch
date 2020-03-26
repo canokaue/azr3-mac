@@ -1,0 +1,12 @@
+diff -U 3 -H -d -r -N -- vstsdk2.4.orig/pluginterfaces/vst2.x/aeffect.h vstsdk2.4/pluginterfaces/vst2.x/aeffect.h
+--- vstsdk2.4.orig/pluginterfaces/vst2.x/aeffect.h	2006-06-20 18:22:56.000000000 +0100
++++ vstsdk2.4/pluginterfaces/vst2.x/aeffect.h	2011-01-21 01:16:27.821931744 +0000
+@@ -36,7 +36,7 @@
+ 	#pragma -a8
+ #elif defined(__GNUC__)
+     #pragma pack(push,8)
+-    #define VSTCALLBACK __cdecl
++    #define VSTCALLBACK //__cdecl
+ #elif defined(WIN32) || defined(__FLAT__) || defined CBUILDER
+ 	#pragma pack(push)
+ 	#pragma pack(8)
