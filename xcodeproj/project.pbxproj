@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B75F2181C9C86C6001FF7C9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2171C9C86C6001FF7C9 /* CoreFoundation.framework */; };
+		6B75F21E1C9C86C6001FF7C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F21C1C9C86C6001FF7C9 /* InfoPlist.strings */; };
+		6B75F2331C9C87EA001FF7C9 /* Controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2251C9C87EA001FF7C9 /* Controls.cpp */; };
+		6B75F2341C9C87EA001FF7C9 /* Editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2271C9C87EA001FF7C9 /* Editor.cpp */; };
+		6B75F2351C9C87EA001FF7C9 /* flp_frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2291C9C87EA001FF7C9 /* flp_frame.cpp */; };
+		6B75F2361C9C87EA001FF7C9 /* flp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F22A1C9C87EA001FF7C9 /* flp.cpp */; };
+		6B75F2381C9C87EA001FF7C9 /* flpproc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F22D1C9C87EA001FF7C9 /* flpproc.cpp */; };
+		6B75F2391C9C87EA001FF7C9 /* fx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F22E1C9C87EA001FF7C9 /* fx.cpp */; };
+		6B75F23A1C9C87EA001FF7C9 /* voice_classes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2311C9C87EA001FF7C9 /* voice_classes.cpp */; };
+		6B75F2441C9C9A1F001FF7C9 /* audioeffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F23F1C9C9A1F001FF7C9 /* audioeffect.cpp */; };
+		6B75F2451C9C9A1F001FF7C9 /* audioeffectx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2411C9C9A1F001FF7C9 /* audioeffectx.cpp */; };
+		6B75F2461C9C9A1F001FF7C9 /* vstplugmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2431C9C9A1F001FF7C9 /* vstplugmain.cpp */; };
+		6B75F24B1C9C9A74001FF7C9 /* vstgui_mac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F2491C9C9A74001FF7C9 /* vstgui_mac.mm */; };
+		6B75F24E1C9C9A81001FF7C9 /* aeffguieditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B75F24C1C9C9A81001FF7C9 /* aeffguieditor.cpp */; };
+		6B75F2501C9C9ACD001FF7C9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F24F1C9C9ACD001FF7C9 /* Accelerate.framework */; };
+		6B75F2521C9C9AD4001FF7C9 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2511C9C9AD4001FF7C9 /* Carbon.framework */; };
+		6B75F2541C9C9ADA001FF7C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2531C9C9ADA001FF7C9 /* Cocoa.framework */; };
+		6B75F2561C9C9AF2001FF7C9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2551C9C9AF2001FF7C9 /* OpenGL.framework */; };
+		6B75F2581C9C9AF9001FF7C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B75F2571C9C9AF9001FF7C9 /* QuartzCore.framework */; };
+		6B75F2681C9C9B2C001FF7C9 /* cknob.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2591C9C9B2B001FF7C9 /* cknob.bmp */; };
+		6B75F2691C9C9B2C001FF7C9 /* dbblack.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25A1C9C9B2B001FF7C9 /* dbblack.bmp */; };
+		6B75F26A1C9C9B2C001FF7C9 /* dbbrown.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25B1C9C9B2B001FF7C9 /* dbbrown.bmp */; };
+		6B75F26B1C9C9B2C001FF7C9 /* dbwhite.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25C1C9C9B2B001FF7C9 /* dbwhite.bmp */; };
+		6B75F26C1C9C9B2C001FF7C9 /* inside.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25D1C9C9B2B001FF7C9 /* inside.bmp */; };
+		6B75F26D1C9C9B2C001FF7C9 /* make a change.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25E1C9C9B2B001FF7C9 /* make a change.bmp */; };
+		6B75F26E1C9C9B2C001FF7C9 /* material-bg-knopf1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F25F1C9C9B2B001FF7C9 /* material-bg-knopf1.bmp */; };
+		6B75F26F1C9C9B2C001FF7C9 /* miniledred.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2601C9C9B2B001FF7C9 /* miniledred.bmp */; };
+		6B75F2701C9C9B2C001FF7C9 /* minioffon.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2611C9C9B2B001FF7C9 /* minioffon.bmp */; };
+		6B75F2711C9C9B2C001FF7C9 /* num_yellow.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2621C9C9B2B001FF7C9 /* num_yellow.bmp */; };
+		6B75F2721C9C9B2C001FF7C9 /* onoffgreen.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2631C9C9B2C001FF7C9 /* onoffgreen.bmp */; };
+		6B75F2731C9C9B2C001FF7C9 /* panel-both.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2641C9C9B2C001FF7C9 /* panel-both.bmp */; };
+		6B75F2741C9C9B2C001FF7C9 /* panelfx.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2651C9C9B2C001FF7C9 /* panelfx.bmp */; };
+		6B75F2751C9C9B2C001FF7C9 /* panelvoice.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2661C9C9B2C001FF7C9 /* panelvoice.bmp */; };
+		6B75F2761C9C9B2C001FF7C9 /* vonoff.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 6B75F2671C9C9B2C001FF7C9 /* vonoff.bmp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B75F2141C9C86C6001FF7C9 /* AZR3.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZR3.vst; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B75F2171C9C86C6001FF7C9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6B75F21B1C9C86C6001FF7C9 /* AZR3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AZR3-Info.plist"; sourceTree = "<group>"; };
+		6B75F21D1C9C86C6001FF7C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B75F21F1C9C86C6001FF7C9 /* AZR3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AZR3-Prefix.pch"; sourceTree = "<group>"; };
+		6B75F2251C9C87EA001FF7C9 /* Controls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controls.cpp; sourceTree = "<group>"; };
+		6B75F2261C9C87EA001FF7C9 /* Controls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controls.h; sourceTree = "<group>"; };
+		6B75F2271C9C87EA001FF7C9 /* Editor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Editor.cpp; sourceTree = "<group>"; };
+		6B75F2281C9C87EA001FF7C9 /* Editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Editor.h; sourceTree = "<group>"; };
+		6B75F2291C9C87EA001FF7C9 /* flp_frame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flp_frame.cpp; sourceTree = "<group>"; };
+		6B75F22A1C9C87EA001FF7C9 /* flp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flp.cpp; sourceTree = "<group>"; };
+		6B75F22B1C9C87EA001FF7C9 /* flp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flp.h; sourceTree = "<group>"; };
+		6B75F22D1C9C87EA001FF7C9 /* flpproc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flpproc.cpp; sourceTree = "<group>"; };
+		6B75F22E1C9C87EA001FF7C9 /* fx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fx.cpp; sourceTree = "<group>"; };
+		6B75F22F1C9C87EA001FF7C9 /* fx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fx.h; sourceTree = "<group>"; };
+		6B75F2301C9C87EA001FF7C9 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		6B75F2311C9C87EA001FF7C9 /* voice_classes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = voice_classes.cpp; sourceTree = "<group>"; };
+		6B75F2321C9C87EA001FF7C9 /* voice_classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voice_classes.h; sourceTree = "<group>"; };
+		6B75F23B1C9C9A03001FF7C9 /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffect.h; path = vstsdk2.4/pluginterfaces/vst2.x/aeffect.h; sourceTree = "<group>"; };
+		6B75F23C1C9C9A03001FF7C9 /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffectx.h; path = vstsdk2.4/pluginterfaces/vst2.x/aeffectx.h; sourceTree = "<group>"; };
+		6B75F23D1C9C9A03001FF7C9 /* vstfxstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vstfxstore.h; path = vstsdk2.4/pluginterfaces/vst2.x/vstfxstore.h; sourceTree = "<group>"; };
+		6B75F23E1C9C9A1F001FF7C9 /* aeffeditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffeditor.h; path = vstsdk2.4/public.sdk/source/vst2.x/aeffeditor.h; sourceTree = "<group>"; };
+		6B75F23F1C9C9A1F001FF7C9 /* audioeffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audioeffect.cpp; path = vstsdk2.4/public.sdk/source/vst2.x/audioeffect.cpp; sourceTree = "<group>"; };
+		6B75F2401C9C9A1F001FF7C9 /* audioeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audioeffect.h; path = vstsdk2.4/public.sdk/source/vst2.x/audioeffect.h; sourceTree = "<group>"; };
+		6B75F2411C9C9A1F001FF7C9 /* audioeffectx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audioeffectx.cpp; path = vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.cpp; sourceTree = "<group>"; };
+		6B75F2421C9C9A1F001FF7C9 /* audioeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audioeffectx.h; path = vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.h; sourceTree = "<group>"; };
+		6B75F2431C9C9A1F001FF7C9 /* vstplugmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vstplugmain.cpp; path = vstsdk2.4/public.sdk/source/vst2.x/vstplugmain.cpp; sourceTree = "<group>"; };
+		6B75F2491C9C9A74001FF7C9 /* vstgui_mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = vstgui_mac.mm; path = vstgui/vstgui_mac.mm; sourceTree = "<group>"; };
+		6B75F24A1C9C9A74001FF7C9 /* vstgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vstgui.h; path = vstgui/vstgui.h; sourceTree = "<group>"; };
+		6B75F24C1C9C9A81001FF7C9 /* aeffguieditor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = aeffguieditor.cpp; path = "vstgui/plugin-bindings/aeffguieditor.cpp"; sourceTree = "<group>"; };
+		6B75F24D1C9C9A81001FF7C9 /* aeffguieditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffguieditor.h; path = "vstgui/plugin-bindings/aeffguieditor.h"; sourceTree = "<group>"; };
+		6B75F24F1C9C9ACD001FF7C9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6B75F2511C9C9AD4001FF7C9 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6B75F2531C9C9ADA001FF7C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6B75F2551C9C9AF2001FF7C9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		6B75F2571C9C9AF9001FF7C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6B75F2591C9C9B2B001FF7C9 /* cknob.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cknob.bmp; sourceTree = "<group>"; };
+		6B75F25A1C9C9B2B001FF7C9 /* dbblack.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = dbblack.bmp; sourceTree = "<group>"; };
+		6B75F25B1C9C9B2B001FF7C9 /* dbbrown.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = dbbrown.bmp; sourceTree = "<group>"; };
+		6B75F25C1C9C9B2B001FF7C9 /* dbwhite.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = dbwhite.bmp; sourceTree = "<group>"; };
+		6B75F25D1C9C9B2B001FF7C9 /* inside.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = inside.bmp; sourceTree = "<group>"; };
+		6B75F25E1C9C9B2B001FF7C9 /* make a change.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "make a change.bmp"; sourceTree = "<group>"; };
+		6B75F25F1C9C9B2B001FF7C9 /* material-bg-knopf1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "material-bg-knopf1.bmp"; sourceTree = "<group>"; };
+		6B75F2601C9C9B2B001FF7C9 /* miniledred.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = miniledred.bmp; sourceTree = "<group>"; };
+		6B75F2611C9C9B2B001FF7C9 /* minioffon.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = minioffon.bmp; sourceTree = "<group>"; };
+		6B75F2621C9C9B2B001FF7C9 /* num_yellow.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = num_yellow.bmp; sourceTree = "<group>"; };
+		6B75F2631C9C9B2C001FF7C9 /* onoffgreen.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = onoffgreen.bmp; sourceTree = "<group>"; };
+		6B75F2641C9C9B2C001FF7C9 /* panel-both.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = "panel-both.bmp"; sourceTree = "<group>"; };
+		6B75F2651C9C9B2C001FF7C9 /* panelfx.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = panelfx.bmp; sourceTree = "<group>"; };
+		6B75F2661C9C9B2C001FF7C9 /* panelvoice.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = panelvoice.bmp; sourceTree = "<group>"; };
+		6B75F2671C9C9B2C001FF7C9 /* vonoff.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = vonoff.bmp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B75F2111C9C86C6001FF7C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B75F2581C9C9AF9001FF7C9 /* QuartzCore.framework in Frameworks */,
+				6B75F2561C9C9AF2001FF7C9 /* OpenGL.framework in Frameworks */,
+				6B75F2541C9C9ADA001FF7C9 /* Cocoa.framework in Frameworks */,
+				6B75F2521C9C9AD4001FF7C9 /* Carbon.framework in Frameworks */,
+				6B75F2501C9C9ACD001FF7C9 /* Accelerate.framework in Frameworks */,
+				6B75F2181C9C86C6001FF7C9 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B75F20B1C9C86C6001FF7C9 = {
+			isa = PBXGroup;
+			children = (
+				6B75F2571C9C9AF9001FF7C9 /* QuartzCore.framework */,
+				6B75F2551C9C9AF2001FF7C9 /* OpenGL.framework */,
+				6B75F2531C9C9ADA001FF7C9 /* Cocoa.framework */,
+				6B75F2511C9C9AD4001FF7C9 /* Carbon.framework */,
+				6B75F24F1C9C9ACD001FF7C9 /* Accelerate.framework */,
+				6B75F2191C9C86C6001FF7C9 /* AZR3 */,
+				6B75F2161C9C86C6001FF7C9 /* Frameworks */,
+				6B75F2151C9C86C6001FF7C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B75F2151C9C86C6001FF7C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F2141C9C86C6001FF7C9 /* AZR3.vst */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B75F2161C9C86C6001FF7C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F2171C9C86C6001FF7C9 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B75F2191C9C86C6001FF7C9 /* AZR3 */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F2771C9C9B65001FF7C9 /* resources */,
+				6B75F2481C9C9A5A001FF7C9 /* vstgui */,
+				6B75F2471C9C9A2A001FF7C9 /* vstsdk24 */,
+				6B75F2251C9C87EA001FF7C9 /* Controls.cpp */,
+				6B75F2261C9C87EA001FF7C9 /* Controls.h */,
+				6B75F2271C9C87EA001FF7C9 /* Editor.cpp */,
+				6B75F2281C9C87EA001FF7C9 /* Editor.h */,
+				6B75F2291C9C87EA001FF7C9 /* flp_frame.cpp */,
+				6B75F22A1C9C87EA001FF7C9 /* flp.cpp */,
+				6B75F22B1C9C87EA001FF7C9 /* flp.h */,
+				6B75F22D1C9C87EA001FF7C9 /* flpproc.cpp */,
+				6B75F22E1C9C87EA001FF7C9 /* fx.cpp */,
+				6B75F22F1C9C87EA001FF7C9 /* fx.h */,
+				6B75F2301C9C87EA001FF7C9 /* Globals.h */,
+				6B75F2311C9C87EA001FF7C9 /* voice_classes.cpp */,
+				6B75F2321C9C87EA001FF7C9 /* voice_classes.h */,
+				6B75F21A1C9C86C6001FF7C9 /* Supporting Files */,
+			);
+			path = AZR3;
+			sourceTree = "<group>";
+		};
+		6B75F21A1C9C86C6001FF7C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F21B1C9C86C6001FF7C9 /* AZR3-Info.plist */,
+				6B75F21C1C9C86C6001FF7C9 /* InfoPlist.strings */,
+				6B75F21F1C9C86C6001FF7C9 /* AZR3-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B75F2471C9C9A2A001FF7C9 /* vstsdk24 */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F23E1C9C9A1F001FF7C9 /* aeffeditor.h */,
+				6B75F23F1C9C9A1F001FF7C9 /* audioeffect.cpp */,
+				6B75F2401C9C9A1F001FF7C9 /* audioeffect.h */,
+				6B75F2411C9C9A1F001FF7C9 /* audioeffectx.cpp */,
+				6B75F2421C9C9A1F001FF7C9 /* audioeffectx.h */,
+				6B75F2431C9C9A1F001FF7C9 /* vstplugmain.cpp */,
+				6B75F23B1C9C9A03001FF7C9 /* aeffect.h */,
+				6B75F23C1C9C9A03001FF7C9 /* aeffectx.h */,
+				6B75F23D1C9C9A03001FF7C9 /* vstfxstore.h */,
+			);
+			name = vstsdk24;
+			sourceTree = "<group>";
+		};
+		6B75F2481C9C9A5A001FF7C9 /* vstgui */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F24C1C9C9A81001FF7C9 /* aeffguieditor.cpp */,
+				6B75F24D1C9C9A81001FF7C9 /* aeffguieditor.h */,
+				6B75F2491C9C9A74001FF7C9 /* vstgui_mac.mm */,
+				6B75F24A1C9C9A74001FF7C9 /* vstgui.h */,
+			);
+			name = vstgui;
+			sourceTree = "<group>";
+		};
+		6B75F2771C9C9B65001FF7C9 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B75F2591C9C9B2B001FF7C9 /* cknob.bmp */,
+				6B75F25A1C9C9B2B001FF7C9 /* dbblack.bmp */,
+				6B75F25B1C9C9B2B001FF7C9 /* dbbrown.bmp */,
+				6B75F25C1C9C9B2B001FF7C9 /* dbwhite.bmp */,
+				6B75F25D1C9C9B2B001FF7C9 /* inside.bmp */,
+				6B75F25E1C9C9B2B001FF7C9 /* make a change.bmp */,
+				6B75F25F1C9C9B2B001FF7C9 /* material-bg-knopf1.bmp */,
+				6B75F2601C9C9B2B001FF7C9 /* miniledred.bmp */,
+				6B75F2611C9C9B2B001FF7C9 /* minioffon.bmp */,
+				6B75F2621C9C9B2B001FF7C9 /* num_yellow.bmp */,
+				6B75F2631C9C9B2C001FF7C9 /* onoffgreen.bmp */,
+				6B75F2641C9C9B2C001FF7C9 /* panel-both.bmp */,
+				6B75F2651C9C9B2C001FF7C9 /* panelfx.bmp */,
+				6B75F2661C9C9B2C001FF7C9 /* panelvoice.bmp */,
+				6B75F2671C9C9B2C001FF7C9 /* vonoff.bmp */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B75F2131C9C86C6001FF7C9 /* AZR3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B75F2221C9C86C6001FF7C9 /* Build configuration list for PBXNativeTarget "AZR3" */;
+			buildPhases = (
+				6B75F2101C9C86C6001FF7C9 /* Sources */,
+				6B75F2111C9C86C6001FF7C9 /* Frameworks */,
+				6B75F2121C9C86C6001FF7C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZR3;
+			productName = AZR3;
+			productReference = 6B75F2141C9C86C6001FF7C9 /* AZR3.vst */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B75F20C1C9C86C6001FF7C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = zr3;
+			};
+			buildConfigurationList = 6B75F20F1C9C86C6001FF7C9 /* Build configuration list for PBXProject "AZR3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B75F20B1C9C86C6001FF7C9;
+			productRefGroup = 6B75F2151C9C86C6001FF7C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B75F2131C9C86C6001FF7C9 /* AZR3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B75F2121C9C86C6001FF7C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B75F21E1C9C86C6001FF7C9 /* InfoPlist.strings in Resources */,
+				6B75F2681C9C9B2C001FF7C9 /* cknob.bmp in Resources */,
+				6B75F2691C9C9B2C001FF7C9 /* dbblack.bmp in Resources */,
+				6B75F26A1C9C9B2C001FF7C9 /* dbbrown.bmp in Resources */,
+				6B75F26B1C9C9B2C001FF7C9 /* dbwhite.bmp in Resources */,
+				6B75F26C1C9C9B2C001FF7C9 /* inside.bmp in Resources */,
+				6B75F26D1C9C9B2C001FF7C9 /* make a change.bmp in Resources */,
+				6B75F26E1C9C9B2C001FF7C9 /* material-bg-knopf1.bmp in Resources */,
+				6B75F26F1C9C9B2C001FF7C9 /* miniledred.bmp in Resources */,
+				6B75F2701C9C9B2C001FF7C9 /* minioffon.bmp in Resources */,
+				6B75F2711C9C9B2C001FF7C9 /* num_yellow.bmp in Resources */,
+				6B75F2721C9C9B2C001FF7C9 /* onoffgreen.bmp in Resources */,
+				6B75F2731C9C9B2C001FF7C9 /* panel-both.bmp in Resources */,
+				6B75F2741C9C9B2C001FF7C9 /* panelfx.bmp in Resources */,
+				6B75F2751C9C9B2C001FF7C9 /* panelvoice.bmp in Resources */,
+				6B75F2761C9C9B2C001FF7C9 /* vonoff.bmp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B75F2101C9C86C6001FF7C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B75F2331C9C87EA001FF7C9 /* Controls.cpp in Sources */,
+				6B75F2341C9C87EA001FF7C9 /* Editor.cpp in Sources */,
+				6B75F2351C9C87EA001FF7C9 /* flp_frame.cpp in Sources */,
+				6B75F2361C9C87EA001FF7C9 /* flp.cpp in Sources */,
+				6B75F2381C9C87EA001FF7C9 /* flpproc.cpp in Sources */,
+				6B75F2391C9C87EA001FF7C9 /* fx.cpp in Sources */,
+				6B75F23A1C9C87EA001FF7C9 /* voice_classes.cpp in Sources */,
+				6B75F2441C9C9A1F001FF7C9 /* audioeffect.cpp in Sources */,
+				6B75F2451C9C9A1F001FF7C9 /* audioeffectx.cpp in Sources */,
+				6B75F2461C9C9A1F001FF7C9 /* vstplugmain.cpp in Sources */,
+				6B75F24B1C9C9A74001FF7C9 /* vstgui_mac.mm in Sources */,
+				6B75F24E1C9C9A81001FF7C9 /* aeffguieditor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B75F21C1C9C86C6001FF7C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B75F21D1C9C86C6001FF7C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B75F2201C9C86C6001FF7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6B75F2211C9C86C6001FF7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6B75F2231C9C86C6001FF7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZR3/AZR3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = VSTGUI_ENABLE_DEPRECATED_METHODS;
+				HEADER_SEARCH_PATHS = (
+					AZR3/vstsdk2.4/,
+					AZR3/vstsdk2.4/pluginterface2/vst2.x,
+					AZR3/vstsdk2.4/public.sdk/source/vst2.x,
+					AZR3/vstgui,
+				);
+				INFOPLIST_FILE = "AZR3/AZR3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = vst;
+			};
+			name = Debug;
+		};
+		6B75F2241C9C86C6001FF7C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AZR3/AZR3-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = VSTGUI_ENABLE_DEPRECATED_METHODS;
+				HEADER_SEARCH_PATHS = (
+					AZR3/vstsdk2.4/,
+					AZR3/vstsdk2.4/pluginterface2/vst2.x,
+					AZR3/vstsdk2.4/public.sdk/source/vst2.x,
+					AZR3/vstgui,
+				);
+				INFOPLIST_FILE = "AZR3/AZR3-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = vst;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B75F20F1C9C86C6001FF7C9 /* Build configuration list for PBXProject "AZR3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B75F2201C9C86C6001FF7C9 /* Debug */,
+				6B75F2211C9C86C6001FF7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B75F2221C9C86C6001FF7C9 /* Build configuration list for PBXNativeTarget "AZR3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B75F2231C9C86C6001FF7C9 /* Debug */,
+				6B75F2241C9C86C6001FF7C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B75F20C1C9C86C6001FF7C9 /* Project object */;
+}
